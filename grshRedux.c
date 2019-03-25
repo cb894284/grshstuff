@@ -191,7 +191,7 @@ int main(int argc, char* argv[]) {
 			//cycle through the arguments until complete, counting the arguments
 			while (arguments[j] != NULL) {
 				j++;
-				arguments[j] = strtok(NULL, "\n\t&"); 
+				arguments[j] = strtok(buffer, "\n\t&"); 
 			}
 			arguments[j + 1] = NULL;
 			//We will process one thing at a time in a loop. We will use waitpid to wait for one to complete before going to the next
